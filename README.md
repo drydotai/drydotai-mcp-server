@@ -27,7 +27,7 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
 
 ## Steps to connect Dry to Claude Desktop
 
-1. Install Node.js (v18.x or later)
+1. Install Node.js (v20.x or later)
    Download from: https://nodejs.org/
    Verify installation by opening Command Prompt (CMD) and running:
    ```node --version```
