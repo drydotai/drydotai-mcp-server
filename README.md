@@ -19,12 +19,9 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
 
 ## Steps to Configure a Smartspace for MCP
 
-1. Open the settings for the smartspace that you want to connect. Click the "Chat" tab and show More Options
+1. Open the settings for the smartspace that you want to connect. Click the "Chat" tab and enable integration for Claude:
 <img width="1029" alt="image" src="https://github.com/user-attachments/assets/dfa4c2c0-d1ac-495f-b2a0-50995b3c2df7" />
 
-2. Click the toggle to enable MCP on the smartspace and provide a description that will let Claude know when you want to send questions to this smartspace.
-
-<img width="1263" height="289" alt="image" src="https://github.com/user-attachments/assets/b6715e98-0523-4bcc-a04b-d061d9255e00" />
 
 ## Steps to connect Dry to Claude Desktop
 
