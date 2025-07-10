@@ -10,8 +10,6 @@ const DRY_AI_GET_TOOLS_URL = "https://dry.ai/api/gettools"; // Define the URL as
 
 const USER_AGENT = "dry-app/1.0";
 
-const app = express();
-
 // Helper function for making NWS API requests
 async function makeDryRequest<RequestType, ResponseType>(url: string, data: RequestType): Promise<ResponseType | null> {
   const headers = {
