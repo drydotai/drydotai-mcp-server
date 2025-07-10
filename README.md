@@ -38,7 +38,7 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
       "mcpServers": {
         "dryai": {
          "command": "npx",
-         "args": ["-y", "@jrscally/dryai-mcp-server"],
+         "args": ["-y", "@drydotai/drydotai-mcp-server"],
          "env": {
             "MCP_TOKEN": "<MCP TOKEN>"
          }
