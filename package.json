@@ -1,7 +1,7 @@
 {
   "author": "@dryai",
   "description": "Official MCP server for Dry.ai",
-  "name": "@jrscally/dryai-mcp-server",
+  "name": "@drydotai/dryai-mcp-server",
   "version": "1.1.0",
   "main": "build/index.js",
   "type": "module",
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/UnitaryLabs/dryai-mcp-server.git"
+    "url": "git+ssh://git@github.com/drydotai/drydotai-mcp-server.git"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.4.0"
   },
   "bugs": {
-    "url": "https://github.com/UnitaryLabs/dryai-mcp-server/issues"
+    "url": "https://github.com/drydotai/drydotai-mcp-server/issues"
   },
-  "homepage": "https://github.com/UnitaryLabs/dryai-mcp-server#readme"
+  "homepage": "https://github.com/drydotai/drydotai-mcp-server#readme"
 }
