@@ -6,6 +6,7 @@ import { z } from "zod";
 
 const DRY_URL_QA_BASE = "https://dry.ai/api/dryqa";
 const DRY_URL_CREATE_BASE = "https://dry.ai/api/drycreate";
+const DRY_URL_UPDATE_BASE = "https://dry.ai/api/dryupdate";
 const DRY_AI_GET_TOOLS_URL = "https://dry.ai/api/gettools"; // Define the URL as a constant
 
 const USER_AGENT = "dry-app/1.0";
@@ -43,7 +44,9 @@ interface DryRequest {
   smartspace?: string;
   user?: string;
   query?: string;
+  item?: string;
   type?: string;
+  tooltype?: string;
 }
 
 // Create server instance
@@ -74,19 +77,31 @@ async function loadToolsFromJson(authToken: string) {
     if (dryTools.smartspaces && dryTools.smartspaces.length > 0) {
       dryTools.smartspaces.forEach((tool: any) => {
 
+        let toolData: Record<string, any> = {};
+        if (tool.schemaDescription) {
+          toolData['query'] = z.string().describe(tool.schemaDescription);
+        }
+        if (tool.querySchemaDescription) {
+          toolData['query'] = z.string().describe(tool.querySchemaDescription);
+        }
+        if (tool.itemSchemaDescription) {
+          toolData['item'] = z.string().describe(tool.itemSchemaDescription);
+        }
+
         server.tool(
             tool.name,
             tool.description,
-            {
-              query: z.string().describe(tool.schemaDescription),
-            },
-            async ({ query }) => {
-              const dryUrl = tool.type ? DRY_URL_CREATE_BASE : DRY_URL_QA_BASE;
+            toolData,
+            async ({ query, item }) => {
+              const dryUrl = tool.toolType ? DRY_URL_UPDATE_BASE : (tool.type ? DRY_URL_CREATE_BASE : DRY_URL_QA_BASE);
+
               const dryData: DryRequest = {
                 user: dryTools.user,
                 smartspace: tool.smartspace,
                 query: query,
-                type: tool.type
+                item: item,
+                type: tool.type,
+                tooltype: tool.toolType
               };
               const dryResponse = await makeDryRequest<DryRequest, DryResponse>(dryUrl, dryData);
 
