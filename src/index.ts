@@ -4,10 +4,16 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
-const DRY_URL_QA_BASE = "https://dry.ai/api/dryqa";
-const DRY_URL_CREATE_BASE = "https://dry.ai/api/drycreate";
-const DRY_URL_UPDATE_BASE = "https://dry.ai/api/dryupdate";
-const DRY_AI_GET_TOOLS_URL = "https://dry.ai/api/gettools"; // Define the URL as a constant
+let SERVER = "https://dry.ai";
+if (false) {
+  SERVER = "http://velocity-local.dry:8080"
+}
+
+const DRY_URL_CREATE_BASE = `${SERVER}/api/drycreate`;
+const DRY_URL_QA_BASE = `${SERVER}/api/dryqa`;
+const DRY_URL_UPDATE_BASE = `${SERVER}/api/dryupdate`;
+const DRY_AI_GET_TOOLS_URL = `${SERVER}/api/gettools`; // Define the URL as a constant
+
 
 const USER_AGENT = "dry-app/1.0";
 
