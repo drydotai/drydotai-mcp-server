@@ -4,13 +4,15 @@ The [Dry.ai](https://dry.ai) Model Context Protocol (MCP) server enables seamles
 
 Begin by signing up for our alpha [here](https://dry.ai/getClaudeMemory)
 
-Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYSxk321Q)
+Watch a video of Dry in action [here](https://youtu.be/gsOecudzmFQ?feature=shared)
+
 
 
 ## Steps to Configure your User
 
 1. Log in to [Dry.ai](https://dry.ai) and go to your Memories for Claude Smartspace. From there you can press the Claude button
 <img width="972" height="293" alt="image" src="https://github.com/user-attachments/assets/523d906f-f47e-4e6f-a520-f26930199f22" />
+
 
 
 2. You can copy your Claude desktop config or your MCP Server URL from either of these locations.
