@@ -13,7 +13,7 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
 <img width="611" alt="Screenshot 2025-04-11 at 12 15 17 PM" src="https://github.com/user-attachments/assets/462d5e88-97f0-4f87-8e64-1e75c07bb8a8" />
 
 
-2. You user has a unique **MCP Token** located on your profile. You can copy your claude desktop config from here.
+2. Your account has a unique **MCP Token** located on your profile and in the + Claude button that appears at the root folder of any smartspace you are the admin of. You can copy your Claude desktop config from either of these locations.
    
 <img width="767" height="185" alt="image" src="https://github.com/user-attachments/assets/9770c54c-a72d-4577-83bf-6abb28c2f68a" />
 
@@ -22,6 +22,8 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
 1. Open the settings for the smartspace that you want to connect. Click the "Chat" tab and enable integration for Claude:
 
 <img width="1263" height="289" alt="image" src="https://github.com/user-attachments/assets/b6715e98-0523-4bcc-a04b-d061d9255e00" />
+
+Note that your very first 'Memories for Claude' smartspace should already be enabled as an integration for Claude.
 
 ## Steps to connect Dry to Claude Desktop
 
@@ -44,6 +46,6 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
       }
    }
    ```
-You can access this by visiting Claude->Settings->Developer and pressing "Edit Config" 
+You can access this by visiting Claude -> Settings -> Developer and pressing "Edit Config" 
 
 2. Run Claude Desktop - it will connect to Dry and all of your configured smartspaces will appear as tools to ask questions and add items. Every time you create or install new memory types in your Dry space, you'll need to restart your Claude desktop app to sync its tools with the latest state of your Dry smartspace.
