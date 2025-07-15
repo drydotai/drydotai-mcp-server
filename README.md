@@ -9,19 +9,20 @@ Watch a video of Dry in action [here](https://youtu.be/TW55riZYsZo?si=pgbnrMACYS
 
 ## Steps to Configure your User
 
-1. Log in to [Dry.ai](https://dry.ai) and navigate to your **Dry Profile**.
-<img width="611" alt="Screenshot 2025-04-11 at 12 15 17 PM" src="https://github.com/user-attachments/assets/462d5e88-97f0-4f87-8e64-1e75c07bb8a8" />
+1. Log in to [Dry.ai](https://dry.ai) and go to your Memories for Claude Smartspace. From there you can press the Claude button
+<img width="972" height="293" alt="image" src="https://github.com/user-attachments/assets/523d906f-f47e-4e6f-a520-f26930199f22" />
 
 
-2. Your account has a unique **MCP Token** located on your profile and in the + Claude button that appears at the root folder of any smartspace you are the admin of. You can copy your Claude desktop config from either of these locations.
+2. You can copy your Claude desktop config or your MCP Server URL from either of these locations.
    
-<img width="767" height="185" alt="image" src="https://github.com/user-attachments/assets/9770c54c-a72d-4577-83bf-6abb28c2f68a" />
+<img width="769" height="473" alt="image" src="https://github.com/user-attachments/assets/e021aeff-b8de-4b82-a188-3e60f3acb9a2" />
 
 ## Steps to Configure a Smartspace for MCP
 
 1. Open the settings for the smartspace that you want to connect. Click the "Chat" tab and enable integration for Claude:
 
-<img width="1263" height="289" alt="image" src="https://github.com/user-attachments/assets/b6715e98-0523-4bcc-a04b-d061d9255e00" />
+<img width="968" height="314" alt="image" src="https://github.com/user-attachments/assets/0b1e2b97-4082-462d-a195-24356d9f3989" />
+
 
 Note that your very first 'Memories for Claude' smartspace should already be enabled as an integration for Claude.
 
