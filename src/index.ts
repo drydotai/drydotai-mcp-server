@@ -5,7 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 let SERVER = "https://dry.ai";
-if (true) {
+if (false) {
   SERVER = "http://velocity-local.dry:8080"
 }
 
