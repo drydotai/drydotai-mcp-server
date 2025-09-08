@@ -5,7 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 let SERVER = "https://dry.ai";
-if (false) {
+if (true) {
   SERVER = "http://velocity-local.dry:8080"
 }
 
@@ -18,10 +18,11 @@ const DRY_AI_GET_TOOLS_URL = `${SERVER}/api/gettools`; // Define the URL as a co
 const USER_AGENT = "dry-app/1.0";
 
 // Helper function for making NWS API requests
-async function makeDryRequest<RequestType, ResponseType>(url: string, data: RequestType): Promise<ResponseType | null> {
+async function makeDryRequest<RequestType, ResponseType>(authToken: string, url: string, data: RequestType): Promise<ResponseType | null> {
   const headers = {
     "User-Agent": USER_AGENT,
     Accept: "application/json",
+    "Authorization": `Bearer ${authToken}`,
     "Content-Type": "application/json",
   };
 
@@ -109,7 +110,7 @@ async function loadToolsFromJson(authToken: string) {
                 type: tool.type,
                 tooltype: tool.toolType
               };
-              const dryResponse = await makeDryRequest<DryRequest, DryResponse>(dryUrl, dryData);
+              const dryResponse = await makeDryRequest<DryRequest, DryResponse>(authToken, dryUrl, dryData);
 
               if (!dryResponse) {
                 return {
